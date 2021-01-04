@@ -6542,7 +6542,7 @@ html .bg--parallax {
 .hotline-phone-ring-wrap {
   position: fixed;
   bottom: 0;
-  right: 0;
+  left: 0;
   z-index: 999999;
 }
 .hotline-phone-ring {
