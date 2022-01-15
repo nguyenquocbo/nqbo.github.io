@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -2182,6 +2183,7 @@
 </table>
 
 <script>
+  
 function myFunction() {
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("myInput");
@@ -2200,6 +2202,15 @@ function myFunction() {
     }       
   }
 }
+  
+$(function() {
+   $('.phonecell').click(function() {
+      var PhoneNumber = $(this).text();
+      PhoneNumber = PhoneNumber.replace('Phone:', '');
+      window.location.href = 'tel://' + PhoneNumber;
+        });
+});
+  
 </script>
 
 </body>
